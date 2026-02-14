@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PBDRP Staff Handbook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0b1320;
+  color:#e8ecf1;
+}
+a{color:#4db8ff;text-decoration:none}
+h1,h2,h3{margin-top:0}
+
+/* ===== POPUP ===== */
+#ownerPopup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.88);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+.popup-box{
+  background:#0f172a;
+  border:2px solid #22c55e;
+  border-radius:16px;
+  padding:32px;
+  max-width:440px;
+  text-align:center;
+  box-shadow:0 0 40px rgba(0,0,0,.6);
+}
+.popup-box img{
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  border:3px solid #4db8ff;
+  margin-bottom:15px;
+}
+.popup-box h2{
+  color:#4db8ff;
+  margin-bottom:5px;
+}
+.popup-box .role{
+  color:#22c55e;
+  font-weight:bold;
+}
+.popup-box .discord{
+  color:#ef4444;
+  font-weight:bold;
+}
+.popup-box button{
+  margin-top:20px;
+  padding:12px 30px;
+  border:none;
+  border-radius:10px;
+  background:#22c55e;
+  color:#000;
+  font-weight:bold;
+  font-size:15px;
+  cursor:pointer;
+}
+.popup-box button:hover{
+  opacity:.85;
+}
+
+/* ===== LAYOUT ===== */
+.sidebar{
+  position:fixed;
+  left:0; top:0;
+  width:240px;
+  height:100%;
+  background:#0f1b30;
+  border-right:2px solid #1f3b66;
+  padding:20px;
+}
+.sidebar img{
+  width:100%;
+  max-width:150px;
+  display:block;
+  margin:0 auto 10px;
+}
+.sidebar h2{
+  text-align:center;
+  color:#22c55e;
+}
+.sidebar a{
+  display:block;
+  padding:10px;
+  margin:6px 0;
+  background:#162544;
+  border-radius:8px;
+}
+.sidebar a:hover{
+  background:#1e3a8a;
+}
+
+.content{
+  margin-left:260px;
+  padding:35px;
+}
+
+/* ===== SECTIONS ===== */
+.section{
+  margin-bottom:45px;
+}
+.panel{
+  background:#111a2b;
+  border:1px solid #1f3b66;
+  border-radius:16px;
+  padding:22px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:#162544;
+  border-radius:16px;
+  padding:15px;
+  text-align:center;
+}
+.card img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* ===== ACCENTS ===== */
+.green{color:#22c55e}
+.blue{color:#4db8ff}
+.red{color:#ef4444}
+
+footer{
+  margin-top:60px;
+  text-align:center;
+  opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<!-- OWNER POPUP -->
+<div id="ownerPopup">
+  <div class="popup-box">
+    <img src="https://i.postimg.cc/FR3GGDpj/duckie.png" alt="NexX Avatar">
+
+    <h2>! NexX</h2>
+    <p class="role">Owner & Developer</p>
+
+    <p>
+      Welcome to the official <strong>PBDRP Staff Handbook</strong>.
+      This handbook defines staff authority, punishments,
+      expectations, and operational structure.
+    </p>
+
+    <p>
+      For issues, bugs, concerns, or development problems,
+      contact me directly on Discord:
+    </p>
+
+    <p class="discord">limited_nexxxx</p>
+
+    <button onclick="closePopup()">Enter Handbook</button>
+  </div>
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <img src="https://i.postimg.cc/4yPXGXJh/Black-and-White-Modern-Football-Club-Badge-Logo-removebg-preview.png">
+  <h2>PBDRP</h2>
+  <a href="#home">Home</a>
+  <a href="#punishments">Punishments</a>
+  <a href="#chain">Chain of Command</a>
+  <a href="#resources">Resources</a>
+  <a href="#media">Media</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<section id="home" class="section">
+  <h1 class="blue">PBDRP STAFF HANDBOOK</h1>
+  <div class="panel">
+    <p>
+      This handbook applies to <strong class="red">ALL staff members</strong>
+      without exception.
+    </p>
+    <ul>
+      <li>Staff Team Server:
+        <a href="https://discord.gg/sbPXdQWF" target="_blank">Join Discord</a>
+      </li>
+      <li>In-Game Code: <strong>PBDRP</strong></li>
+      <li>Melonly Join Code: <strong>PPSPKV</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section id="punishments" class="section">
+  <h2 class="red">Punishments & Discipline</h2>
+  <div class="panel">
+    <ul>
+      <li>Verbal Warning – Minor misconduct</li>
+      <li>Written Warning – Repeated issues</li>
+      <li>Strike – Serious misconduct</li>
+      <li>Suspension – Abuse of authority</li>
+      <li>Demotion – Negligence or incompetence</li>
+      <li>Termination – Severe abuse or corruption</li>
+    </ul>
+    <p class="green">Severity overrides escalation order.</p>
+  </div>
+</section>
+
+<section id="chain" class="section">
+  <h2 class="blue">Chain of Command</h2>
+  <div class="panel">
+    <ol>
+      <li>Owner / Foundership</li>
+      <li>Board / Executives</li>
+      <li>Management</li>
+      <li>Internal Affairs</li>
+      <li>Administration</li>
+      <li>Moderation</li>
+      <li>Trainees</li>
+    </ol>
+  </div>
+</section>
+
+<section id="resources" class="section">
+  <h2 class="green">Staff Resources</h2>
+  <div class="panel">
+    <ul>
+      <li>All actions logged via Melonly</li>
+      <li>Confidentiality is mandatory</li>
+      <li>No favoritism or abuse of power</li>
+      <li>Professional conduct required</li>
+    </ul>
+  </div>
+</section>
+
+<section id="media" class="section">
+  <h2 class="blue">PBDRP Media</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.postimg.cc/85yygY2P/pbdrp_car.png">
+      <p>Patrol Operations</p>
+    </div>
+    <div class="card">
+      <img src="https://i.postimg.cc/9MxxHk6z/staff_car.png">
+      <p>Staff Deployment</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+© PBDRP — Official Staff Handbook
+</footer>
+
+</div>
+
+<script>
+function closePopup(){
+  document.getElementById("ownerPopup").style.display="none";
+}
+</script>
+
+</body>
+</html>
 
